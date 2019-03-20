@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <% include ../partials/head %>
+  </head>
+    
+  <body>
+
+    <nav class="pickGoalsNav" role="navigation">
+        <header role="banner">
+        <h1>Visio</h1> 
+        </header>
+        </nav>
+
+    <div class="openingBox2">
+        <p class="pickGoalsPara">We all have goals and aspirations in life, but how can we reach them? The purpose of this app is to help individuals organize their ideas to create clear short-term or longterm goals. Welcome to Visio!</p>
+        </div>
+
+  <main>
+  <section class="pickGoalsSection">
+
+  <form id="myform" action="#" >
+  <div class="dashboaresults1" >
+  </div>
+  <input class="pickGoals js-pickGoals" form="myform" type="submit"  />
+
+  </form>
+    
+  <div class="hiddenForm">
+
+      <div class="row js-row">
+          <div class="col-3">
+          <div class="box tooltip orange"><img src="../pictures/career.jpg" alt="Career"> <p> <span class="tooltiptext">Click to show options list </span><span class="wordSpans">Career</span></p></div>
+          </div>
+          
+          <div class="col-3">
+          <div class="box tooltip blue"><img src="../pictures/financial.jpg" alt="Financial"><p> <span class="tooltiptext">Click to show options list </span><span class="wordSpans">Financial</span> </p></div>
+          </div>
+          
+          <div class="col-3">
+          <div class="box tooltip green"><img src="../pictures/spiritual.jpg" alt="Spiritual"><p> <span class="tooltiptext">Click to show options list </span><span class="wordSpans">Spiritual</span></p></div>
+          </div>
+          </div>
+                
+          <div class="row js-row">
+          <div class="col-4">
+          <div class="box tooltip orange"><img src="../pictures/experiential.jpg" alt="Experiential"><p> <span class="tooltiptext">Click to show options list </span><span class="wordSpans">Experiential</span></p></div>
+          </div>
+          
+          <div class="col-4">
+          <div class="box tooltip blue"><img src="../pictures/physical.jpg" alt="Physical"><p> <span class="tooltiptext">Click to show options list </span><span class="wordSpans">Physical</span></p></div>
+          </div>
+          
+          <div class="col-4">
+          <div class="box tooltip green"><img src="../pictures/personaldevelopment.jpg" alt="Personal-Development"><p> <span class="tooltiptext">Click to show options list </span><span class="wordSpans">Personal-Development</span> </p></div>
+          </div>
+          </div>
+      
+       <button type="submit" class="reloadButton">Return to Home</button>
+      
+      
+      <div class="js-error-message"></div>
+
+
+      <section class="secondSection">
+
+      <div class="commentsForm"> 
+
+          <form class="goal-notes" role="form" action="#">
+          <legend>Notes to reach my goals, choose a category.</legend>
+          
+          <label class="category" for="category"></label>
+            <select id="category" type="text" title="category" class="my-category"  placeholder="Enter Category" required>
+              <option class="cssClassOption" value="0"></option>
+              <option class="cssClassOption" value="Career" selected>Career</option>
+              <option class="cssClassOption" value="Financial">Financial</option>
+              <option class="cssClassOption" value="Physical">Physical</option>
+              <option class="cssClassOption" value="Personal-development">Personal-development</option>
+              <option class="cssClassOption" value="Spiritual">Spiritual</option>
+              <option class="cssClassOption" value="Experiential">Experiential</option>
+            </select>
+                   
+          <label for="notes">
+          <input id="notes" title="notes"  type="text" class="my-notes" placeholder="Enter Notes" required>
+          </label>
+          
+          <button type="submit" class="submitPost">Submit</button>  
+
+              
+          </form>
+          </div>
+          
+          <div class="post-results commentsCss"></div>
+
+</section>
+
+
+</div>
+</main>
+
+</body>
+</html>

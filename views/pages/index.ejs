@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+</head>
+
+<body>
+
+<section>       
+
+<!-- This section provides the first introduction for the name of the app: Visio as well as the introduction-->
+<nav role="navigation">
+  <header role="banner">
+  <h1>Visio</h1> 
+  </header>
+</nav>
+
+<main role="main">
+
+<div class="openingBox">
+  <p>We all have goals and aspirations in life, but how can we reach them? The purpose of this app is to help individuals organize their ideas to create clear short-term or longterm goals. Welcome to Visio!</p>
+</div>
+</section>
+
+ <!-- This section contains the first form element used for signup or login-->  
+<section class="sectionIndex">
+<div class="signUpIn"> 
+
+  <form role="form" method="post" class="formOpener js-login-form" action="/login">
+  <legend>Login or SignUp</legend>
+  <label class="username" for="username">Email:
+  <input id="username" name="email" title="Email" type="email" class="u-name"  placeholder="testu5@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+  </label>
+
+  <label for="password">Password:
+  <input id="password" title="Password" name="password" type="password" class="p-word" placeholder="password05" required>
+  </label>
+          <p class="paraTag">Demo Username: testu5@gmail.com</p>
+          <p class="paraTag">Demo Password: password05</p>
+
+ <!-- If a client clicks the login button then the .logIn class function in public/index.js will run verfying the user and loading the pick-goals.html page; if the user chooses login then the users credentials will be checked prior to the page pick-goals.html being loaded-->  
+  <button type="submit" class="logIn">Login</button>      
+  <button type="submit" class="signUP"><a href="/signup">Signup </a></button>
+  </form>
+</div>
+</section>
+  
+</main>
+        
+
+</body>
+</html>

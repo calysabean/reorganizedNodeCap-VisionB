@@ -1,0 +1,760 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+   
+body {
+  width:100%;
+  margin: 0px;
+  background:url('../pictures/vision.jpg') no-repeat center fixed;
+}
+
+
+nav {
+  height: 66px;
+  border-bottom: solid white;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  padding-left: 10px;
+}
+
+/* this ruleset affects "Visio" text*/
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  color: white;
+  text-align: left;
+  margin: 4px;
+  padding-left: 13px;
+  padding-top: 13px;
+}
+
+/* this ruleset partly affects the background gradient*/
+  @keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* this ruleset partly affects the background gradient as well contains the class for the first form for login and signup*/
+.openingBox {
+  background: linear-gradient(132deg, #f39774, #1665c1);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 30s ease infinite;
+  width: 100%;
+  height: 250px;
+  margin-top: 16px;
+  padding-top: 23px;
+  padding-bottom: 100px;
+  font-size: 25px;
+  top: 50px;
+  color: white;
+  position: absolute;
+  border-bottom: solid white;
+}
+
+/* this ruleset affects the text input in index.html*/
+  input[type=text] {
+  width: 95%;
+  padding: 12px 20px;
+  margin-left: 2%;
+  display: block;
+  outline-style: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* this ruleset affects the text input in index.html*/
+  input[type=password] {
+  width: 95%;
+  padding: 12px 20px;
+  margin-left: 2%;
+  display: block;
+  outline-style: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* this ruleset affects the input class designated for username in index.html*/
+  .u-name {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+  
+/* this affects the legend element*/
+legend {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+/* this affects the form for signUp.html*/
+.signUpIn1 {
+  width: 46%;
+  height: 300px;
+  margin-top: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(245, 245, 238, 0.8);
+  padding-bottom: 5px;
+  border-radius: 2%;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+/* this affects the button for "signUp" in index.html*/
+.signUP {
+  width: 45%;
+  padding: 9px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  left: 10px;
+}
+
+/* this affects the button for "signUp" in signUp.html*/
+.signUP1 {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;    
+  width: 100%;
+  padding: 8px;
+}
+
+/*First section on pick-goals page*/
+.pickGoalsSection {
+  margin-top: 331px;
+}
+
+/*button reloads to main home page - index.html, but also logs user out*/
+.reloadButton {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 12px;       
+}
+
+/* affects positioning of signup.html form*/
+.signUpMain {
+  margin-top: -122px;
+}
+
+.jSsignUpForm {
+  margin-top: 0px;
+}
+
+/*this is the code for the comments form on pick-goals.html*/
+.commentsForm {
+  width: 70%;
+  height: 348px;
+  margin-top: 336px;    
+  margin-left: auto;
+  margin-right:auto;
+  background:rgba(245, 245, 238, 0.8);
+  padding-bottom: 5px;
+  border-radius: 2%;
+  padding-top: 24px;
+  margin-top: 49px;
+  margin-bottom: 100px;
+ }
+
+.formCss {
+  padding-top: 10px;
+ /* width: 79%;*/
+}
+
+/*Display format of GET list*/
+.dbDisplay {
+  border: solid lightgray;
+  background-color: rgba(255,255,255,0.5);
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Formats GET category item on pick-goals.html*/
+.dbGoals {
+  height: 90px;
+  margin-top: -91px;
+  margin-bottom: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 5px;
+  padding-left: 2px;
+  padding-top: 93px;
+  padding-bottom: 1px;
+  height: 95px;
+  width: 469px;
+  font-size: 25px;
+  margin-bottom: 0px;
+  color: black;
+} 
+
+/*Formats GET goals item on pick-goals.html*/
+.dbGoals1 {
+  height: 90px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 5px;
+  padding-left: 2px;
+  padding-top: 61px;
+  padding-bottom: 1px;
+  height: 90px;
+  width: 469px;
+  font-size: 25px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: black;
+}
+
+.pickGoals {
+  display: none;
+  width: 33%;
+  outline: none;
+  cursor: pointer;
+  margin-top: 24px;
+  margin-left: 15%;
+  margin-right: 4px;
+  font-size: 20px;
+}
+
+.deleteGoals {
+  display: inline-block;
+  width: 33%;
+  outline: none;
+  cursor: pointer;
+  margin-top: 24px;
+  margin-left: 16px;
+  margin-right: 0px;
+  padding: 13px;
+  font-size: 20px;
+}
+
+.openingBox2 {
+  background: linear-gradient(132deg,  #f39774, #1665c1);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 30s ease infinite;
+  width: 100%;
+  height: 250px;
+  margin-top: 16px;
+  padding-top: 23px;
+  padding-bottom: 100px;
+  font-size: 25px;
+  top: 50px;
+  color: white;
+  position: absolute;
+  border-bottom: solid white;
+}
+
+.cssClassOption {
+  text-align: center;
+}
+
+.answerOption1 {
+  border: none;
+  width: 34px;
+  height: 44px;
+  display: none;
+}
+
+main .row {
+    margin-bottom: 20px;
+  }
+  
+  .box img {
+    height: 200px;
+    width: 170px;
+    padding-top: 30px;
+    border-radius: 5%
+  }
+  
+  .box {
+    display: inline;
+  }
+  
+  .container {
+    position: absolute;
+    height: 66px;
+    border-bottom: solid white;
+    width: 100%;
+    top: 0px;
+    padding-left: 10px;
+  }
+
+  .reloadButton {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; 
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  
+  h3 {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  p {
+    border-top: 0px;
+    margin-top: 0;
+    padding-right: 5px;
+    padding-left: 2px;
+    height: 90px;
+    width: 469px;
+    font-size: 25px;
+    margin-bottom: 0px;
+    text-align: center;
+    
+  }
+/*paragraph class for index.html*/
+  .paraTag {
+    font-size: 20px;
+    margin-right: auto;
+    margin-top: -28px;
+    margin-left: auto;
+    font-size: 20px;
+    padding-top: 29px;
+    margin-bottom: -47px;
+  }
+
+  .secondSection {
+    background-color: rgba(255,255,255,0.3);
+    height: 522px;
+    padding-top: 5px;
+    margin-top: 30px;  }
+
+    .row .js-row {
+      background-color: rgba(0,0,255, .1);
+      
+    }
+
+  /*ruleset for selection options in pick-goals.html*/
+  select {
+    width: 31%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 21px;
+  }
+
+  /*submit button for comments form*/
+  .submitPost {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    margin-top: 33px;
+    padding: 12px;
+    font-size: 15px;
+  }
+  
+  .wordSpans {
+    margin-left: 31px;
+    padding-left: 1px;
+    position: absolute;
+  }
+
+  p .box {
+    padding-right: 5px;
+    padding-left: 2px;
+  }
+  
+  .col-3 .orange span {
+    display: block;
+    font-weight: bold;
+    color: white;
+text-align: center;
+  }
+  
+  .col-3 .green span {
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .col-3 .blue span {
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .col-4 .orange span {
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .col-4 .green span {
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .col-4 .blue span {
+    display: block;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+.row {
+    max-width: 1000px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+  }
+  
+  .row::before,
+  .row::after {
+    display: table;
+    content: '';
+  }
+  
+  .row::after {
+    clear: both;
+  }
+  
+  .col-3, .col-4 {
+    float: left;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+  }
+  
+  .col-3, .col-4 {
+    width: 100%;
+  }
+
+  .commentsCss {
+    margin-top: 181px;
+  }
+  
+  @media only screen and (min-width: 640px) {
+    .col-3 {
+      width: 33.33%;
+    }
+  
+    .col-4 {
+      width: 33.33%;
+    }
+  }
+
+  /*comments form on pick-goal.html page*/
+  .signUpIn {
+    width: 70%;
+    height: 348px;
+    margin-top: 368px;    
+    margin-left: auto;
+    margin-right:auto;
+    background:rgba(245, 245, 238, 0.8);
+    padding-bottom: 5px;
+    border-radius: 5%;
+    padding-top: 24px;
+   }
+
+   input[type=text] {
+    width: 95%;
+    padding: 12px 20px;
+    margin-left: 2%;
+    display: block;
+    outline-style: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .pickGoals {
+    display: hidden;
+  }
+
+  label {
+    padding-left: 2%;
+  }
+
+  .my-notes {
+  width: 95%;
+  height: 200px;
+  }
+
+  .submit {
+    position: absolute;
+    margin-top: 30px;
+    width: 65%;
+    height: 40px
+  }
+
+  button:hover  {
+      background:  #f39774;
+  }
+
+  /*.hiddenForm {
+    display:none;
+  }*/
+
+  .thirdView {
+    display:none;
+  }
+
+  /*Adds tool tip on hover*/
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .pickGoalsPara {
+    font-size: 26px;  
+  }
+
+  /*STOPPED HERE*/
+  /*For Desktop Screens*/
+@media only screen and (min-width: 700px) {
+  
+
+
+html {
+  zoom: 100%;
+}
+  .openingBox { 
+  background: linear-gradient(132deg, #f39774, #1665c1);
+  animation: BackgroundGradient 30s ease infinite;
+  width: 100%;
+  height: 253px;
+  margin-left: 0;
+  padding-bottom: 100px;
+  font-size: 25px;
+  top: 50px;
+  color: white;
+  position: absolute;
+  border-bottom: solid white;
+  border-width: 5px;
+}
+p {
+    border-top: 0px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    width: 56%;
+    font-size: 31px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.signUpIn {
+  width: 81%;
+  height: 437px;
+  margin-top: 368px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(245, 245, 238, 0.8);
+  padding-bottom: 5px;
+  border-radius: 2%;
+  font-size: 23px;
+  padding-top: 24px;
+}
+
+/* this affects the button for "login" in index.html*/
+.logIn {
+  background-color: azure;
+  border-radius: 8%;
+  margin-top: 61px;
+  width: 43%;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 0%;
+  padding: 16px;
+}
+
+/* this affects the button for "signup" in index.html*/
+.signUP {
+  background-color: azure;
+  border-radius: 8%;
+  margin-top: 61px;
+  width: 43%;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  margin-left: 0%;
+  margin-right: -14%;
+  padding: 16px;
+}
+.formOpener {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  color: white;
+  text-align: left;
+  margin: 4px;
+  padding-left: 13px;
+  padding-top: 13px;
+}
+
+}
+
+/*For Mobile Screens*/
+@media only screen and (max-width: 699px) {
+  
+body{
+width: 100%;
+position: fixed;
+}
+
+
+nav {
+  height: 66px;
+  width: 100%;
+  position: absolute;
+  top: -22px;
+  padding-left: 10px;
+}
+
+
+
+h1{
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 28px;
+color: white;
+text-align: center;
+margin-top: 17px;
+padding-top: 13px;
+}
+  .openingBox {
+  width: 100%;
+  height: 200px;
+  margin-top: -6px;
+  padding-left: 0%;
+  padding-top: 46px;
+  color: white;
+  position: absolute;
+  border-bottom: solid white;
+  }
+  
+
+  p {
+    border-top: 0px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 90px;
+    width: 400px;
+    font-size: 21px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.signUpIn {
+  width: 94%;
+  height: 350px;
+  margin-top: 76%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(245, 245, 238, 0.8);
+  padding-bottom: 5px;
+  border-radius: 2%;
+  padding-top: 13px;
+}
+
+.paraTag {
+  font-size: 20px;
+  margin-right: auto;
+  margin-top: -28px;
+  margin-left: auto;
+  font-size: 17px;
+  padding-top: 29px;
+  padding-left: 0px;
+  padding-right: 72px;
+  margin-bottom: -73px;
+}
+
+.sectionIndex {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formOpener {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logIn {
+  margin-top: 44px;
+  width: 41%;
+  outline: none;
+  cursor: pointer;
+  margin-top: 71px;
+  margin-left: 5%;
+  margin-right: 4px;
+  padding: 20px;
+  background-color: azure;
+  border-radius: 8%;
+}
+
+.signUP {
+  position: relative;
+  left: -9px;
+  width: 41%;
+  outline: none;
+  cursor: pointer;
+  margin-top: 71px;
+  margin-left: 7px;
+  margin-right: 4px;
+  padding: 20px;
+  background-color: azure;
+  border-radius: 8%;
+}
+
+html {
+zoom: 98%
+
+}
+}
+
+@media only screen and (max-width: 320px) {
+  .signUP {
+    margin-left: -1px;
+}
+
+.paraTag {
+
+  padding-right: 120px;
+}
+}
