@@ -12,7 +12,7 @@ var session      = require('express-session');
 
 mongoose.Promise = global.Promise;
 
-const { DATABASE_URL, PORT } = require('./config/database.js');
+const { DATABASE_URL, PORT} = require('./config/database.js');
 
 app.use(express.static('public'))
 
@@ -36,6 +36,54 @@ require('./app/routes/main.js')(app, passport);
 require('./app/routes/auth.js')(app, passport); 
 
 let server;
+
+/*
+function runServer(TEST_DATABASE_URL, port = PORT) {
+  return new Promise((resolve, reject) => {
+    mongoose.connect(TEST_DATABASE_URL, err => {
+      if (err) {
+        return reject(err);
+      }
+      server = app.listen(port, () => {
+        console.log(`Your app is listening on port ${port}`);
+        resolve();
+      })
+        .on('error', err => {
+          mongoose.disconnect();
+          reject(err);
+        });
+    });
+  });
+}
+
+function closeServer() {
+  return mongoose.disconnect().then(() => {
+    return new Promise((resolve, reject) => {
+      console.log('Closing server');
+      server.close(err => {
+        if (err) {
+          return reject(err);
+        }
+        resolve();
+      });
+    });
+  });
+}
+
+if (require.main === module) {
+  runServer(TEST_DATABASE_URL).catch(err => console.error(err));
+}
+
+module.exports = { runServer, app, closeServer };
+
+
+
+// launch ======================================================================
+//app.listen(port);
+console.log('The magic happens on port ' + port);
+*/
+
+
 
 function runServer(DATABASE_URL, port = PORT) {
   return new Promise((resolve, reject) => {
@@ -80,3 +128,4 @@ module.exports = { runServer, app, closeServer };
 // launch ======================================================================
 //app.listen(port);
 console.log('The magic happens on port ' + port);
+

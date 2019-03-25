@@ -19,6 +19,18 @@ module.exports = function(app, passport) {
     failureFlash: true 
   }));
 
+  app.get('/delete/:id', passport.authenticate('local-login', {
+    successRedirect: '/profile',
+    failureRedirect: '/profile',
+    failureFlash: true 
+  }));
+
+  app.put('/posts/:id', passport.authenticate('local-login', {
+    successRedirect: '/edit-goal',
+    failureRedirect: '/profile',
+    failureFlash: true 
+  }));
+
   app.get('/logout', function (req, res) {
       req.logout();
       res.redirect('/');

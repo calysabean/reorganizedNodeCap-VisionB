@@ -1,7 +1,6 @@
 'use strict';
 
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
 
 var goalSchema = mongoose.Schema({
   category: 'string',
@@ -15,7 +14,5 @@ goalSchema.methods.serialize = function() {
     goal: this.goal
   };
 };
- 
-  const Goal = mongoose.model('Goal', goalSchema, );
-  
-  module.exports = { Goal};
+
+  module.exports = mongoose.model('Goal', goalSchema);

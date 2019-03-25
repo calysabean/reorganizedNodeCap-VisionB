@@ -1,7 +1,5 @@
 'use strict';
-
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
 
 const goalPostSchema = mongoose.Schema({
     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
@@ -11,12 +9,11 @@ const goalPostSchema = mongoose.Schema({
   
   goalPostSchema.methods.serialize = function() {
     return {
-      //id: this._id,
+      id: this._id,
       category: this.category,
       comments: this.comments
     };
   };
-  
-  const GoalPost = mongoose.model('GoalPost', goalPostSchema);
-  
-  module.exports = { GoalPost};
+
+  module.exports = mongoose.model('GoalPost', goalPostSchema);
+
