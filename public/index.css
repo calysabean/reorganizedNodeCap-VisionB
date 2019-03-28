@@ -42,16 +42,15 @@ h1 {
   background-size: 400% 400%;
   animation: BackgroundGradient 30s ease infinite;
   width: 100%;
-  height: 250px;
   margin-top: 16px;
-  padding-top: 23px;
-  padding-bottom: 100px;
+  padding: 44px;
   font-size: 25px;
   top: 50px;
   color: white;
   position: absolute;
   border-bottom: solid white;
   border-top: solid white;
+  display: flex;
 }
 
 /* this ruleset affects the text input in index.html*/
@@ -92,9 +91,9 @@ legend {
 
 /* this affects the form for signUp.html*/
 .signUpIn1 {
-  width: 46%;
+  width: 52%;
   height: 300px;
-  margin-top: 429px;
+  margin-top: 286px;
   margin-left: auto;
   margin-right: auto;
   background: rgba(245, 245, 238, 0.8);
@@ -104,15 +103,6 @@ legend {
   padding-top: 5px;
 }
 
-/* this affects the button for "signUp" in index.html*/
-.signUP {
-  width: 45%;
-  padding: 9px;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  left: 10px;
-}
 
 /* this affects the button for "signUp" in signUp.html*/
 .signUP1 {
@@ -149,31 +139,40 @@ legend {
 
 /*this is the code for the comments form on pick-goals.html*/
 .commentsForm {
-  width: 70%;
+  width: 95%;
   height: 348px;
-  margin-top: 336px;    
+  margin-top: 336px;
   margin-left: auto;
-  margin-right:auto;
-  background:rgba(245, 245, 238, 0.8);
+  margin-right: auto;
+  background: rgba(245, 245, 238, 0.8);
   padding-bottom: 5px;
   border-radius: 2%;
   padding-top: 24px;
-  margin-top: 49px;
+  margin-top: 0px;
   margin-bottom: 100px;
  }
 
-.formCss {
-  padding-top: 10px;
- /* width: 79%;*/
-}
-
-/*Display format of GET list*/
-.dbDisplay {
-  border: solid lightgray;
-  background-color: rgba(255,255,255,0.5);
-  width: 90%;
-  margin-right: auto;
+ /*Signup page form*/
+ .commentsForm2 {
+  width: 95%;
+  height: 312px;
+  margin-top: 336px;
   margin-left: auto;
+  margin-right: auto;
+  background: rgba(245, 245, 238, 0.8);
+  padding-bottom: 5px;
+  border-radius: 2%;
+  padding-top: 24px;
+  margin-bottom: 100px;
+ }
+
+
+
+.formCss {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
 }
 
 /*Edit box formatting*/
@@ -195,41 +194,11 @@ legend {
   margin-bottom: 17px;
 }
 
-/*Formats GET category item on pick-goals.html*/
-.dbGoals {
-  height: 90px;
-  margin-top: -91px;
-  margin-bottom: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 5px;
-  padding-left: 2px;
-  padding-top: 93px;
-  padding-bottom: 1px;
-  height: 95px;
-  width: 469px;
-  font-size: 25px;
-  margin-bottom: 0px;
-  color: black;
-} 
 
 /*Formats GET goals item on pick-goals.html*/
 .dbGoals1 {
-  height: 90px;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 5px;
-  padding-left: 2px;
-  padding-top: 61px;
-  padding-bottom: 1px;
-  height: 20%;
-    width: 469px;
   font-size: 25px;
-  margin-bottom: 0px;
-  text-align: center;
-  color: black;
+
 }
 
 .dashboaresults1 {
@@ -281,26 +250,10 @@ display: none;
 }
 
 .answerOption1 {
-  border: none;
-  width: 34px;
-  height: 44px;
   display: none;
+  
 }
 
-main .row {
-    margin-bottom: 20px;
-  }
-  
-  .box img {
-    height: 200px;
-    width: 170px;
-    padding-top: 30px;
-    border-radius: 5%
-  }
-  
-  .box {
-    display: inline;
-  }
   
   .container {
     position: absolute;
@@ -324,37 +277,22 @@ main .row {
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  
-  p {
-    border-top: 0px;
-    margin-top: 0;
-    padding-right: 5px;
-    padding-left: 2px;
-    height: 90px;
-    width: 469px;
-    font-size: 25px;
-    margin-bottom: 0px;
-    text-align: center;
-    margin-left: 96px;
-  }
+ 
 /*paragraph class for index.html*/
   .paraTag {
-    font-size: 20px;
-    margin-right: 142px;
-    margin-top: -28px;
+    margin-top: -27px;
     margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
-    padding-top: 29px;
-    margin-bottom: -47px;
+    padding-top: 31px;
+    margin-bottom: -19px;
+    text-align: center;
   }
 
   .main-section {
   height: 522px;
   padding-top: 5px;
-  margin-top: 278px;  }
-
-.row .js-row {
-background-color: rgba(0,0,255, .1);   
+  margin-top: 370px;  
 }
 
   /*ruleset for selection options in pick-goals.html*/
@@ -377,16 +315,6 @@ background-color: rgba(0,0,255, .1);
     margin-top: 33px;
     padding: 12px;
     font-size: 15px;
-  }
-  
-  @media only screen and (min-width: 640px) {
-    .col-3 {
-      width: 33.33%;
-    }
-  
-    .col-4 {
-      width: 33.33%;
-    }
   }
 
   /*comments form on pick-goal.html page*/
@@ -436,31 +364,8 @@ background-color: rgba(0,0,255, .1);
       background:  #f39774;
   }
 
-  /*.hiddenForm {
-    display:none;
-  }*/
-
   .thirdView {
     display:none;
-  }
-
-  /*Adds tool tip on hover*/
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-  
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
   }
 
   .pickGoalsPara {
@@ -471,38 +376,110 @@ background-color: rgba(0,0,255, .1);
     border-bottom: white;
   }
 
-  /*STOPPED HERE*/
   /*For Desktop Screens*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1000px) {
 
 html {
   zoom: 100%;
 }
-  .openingBox { 
-  background: linear-gradient(132deg, #f39774, #1665c1);
-  animation: BackgroundGradient 30s ease infinite;
-  width: 100%;
-  height: 253px;
-  margin-left: 0;
-  padding-bottom: 100px;
-  font-size: 25px;
-  top: 50px;
-  color: white;
+
+.nav-home {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+/* Goals page*/
+.flexBox3 {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 15%;
+    padding: 1%;
+    font-size: 18px;
+    margin: 0;
+    top: 7px;
+    right: 1%;
+    float: left;
+    position: absolute;
+}
+
+/* Signup page*/
+.flexBox4 {
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 29%;
+  padding: 1%;
+  font-size: 18px;
+  margin: 0;
+  top: 7px;
+  right: 1%;
+  float: left;
   position: absolute;
-  border-bottom: solid white;
-  border-width: 5px;
-  height: 338px;
+}
+
+.openingP {
+  padding: 5px;
+  margin-bottom: 7px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
 
 }
 
+.formCss {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+  }
+  
+  /*Display format of GET list*/
+  .dbDisplay {
+  
+    border: solid lightgray;
+    background-color: rgba(255,255,255,0.5);
+    padding: 5px;
+    margin-bottom: 7px;
+    box-sizing: border-box;
+    width: 33%;
+    text-align: center;
+  }
+
+.parentFlex {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.flexBox{
+  display: block;
+  width: 45%;
+  font-size: 24px;
+  margin-top: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flexBox2 {
+  display: block;
+  width: 42%;
+  font-size: 16px;
+  margin-top: 18px;
+  margin-bottom: 3px;
+}
+
 .paraTag {
-  font-size: 20px;
-  margin-right: 201px;
-  margin-top: -28px;
+
+  margin-top: -27px;
   margin-left: auto;
+  margin-right: auto;
   font-size: 20px;
-  padding-top: 29px;
-  margin-bottom: -47px;
+  padding-top: 31px;
+  margin-bottom: -19px;
+  text-align: center;
 }
 
 .sectionIndex {
@@ -514,23 +491,12 @@ html {
   padding-top: 28px;
 }
 
-p {
-    border-top: 0px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    height: 90px;
-    width: 56%;
-    font-size: 32px;
-    margin-bottom: 0px;
-    text-align: center;
-    margin-top: 39px;
-}
+
 
 .signUpIn {
-  width: 81%;
-  height: 437px;
-  margin-top: 368px;
+  width: 92%;
+  height: 360px;
+  margin-top: 310px;
   margin-left: auto;
   margin-right: auto;
   background: rgba(245, 245, 238, 0.8);
@@ -540,33 +506,7 @@ p {
   padding-top: 24px;
 }
 
-/* this affects the button for "login" in index.html*/
-.logIn {
-  background-color: azure;
-  border-radius: 8%;
-  margin-top: 61px;
-  width: 43%;
-  outline: none;
-  cursor: pointer;
-  display: inline-block;
-  margin-left: 5%;
-  margin-right: 0%;
-  padding: 16px;
-}
 
-/* this affects the button for "signup" in index.html*/
-.signUP {
-  background-color: azure;
-  border-radius: 8%;
-  margin-top: 61px;
-  width: 43%;
-  display: inline-block;
-  outline: none;
-  cursor: pointer;
-  margin-left: 0%;
-  margin-right: -14%;
-  padding: 16px;
-}
 .formOpener {
   margin-left: auto;
   margin-right: auto;
@@ -588,129 +528,38 @@ h1 {
   margin-left: 42%;
 }
 
-
-@media only screen and (min-width: 1024px) {
-
-html {
-  zoom: 100%;
-}
-  .openingBox { 
-  background: linear-gradient(132deg, #f39774, #1665c1);
-  animation: BackgroundGradient 30s ease infinite;
-  width: 100%;
-  height: 253px;
-  margin-left: 0;
-  padding-bottom: 100px;
-  font-size: 25px;
-  top: 50px;
-  color: white;
-  position: absolute;
-  border-bottom: solid white;
-  border-width: 5px;
-  height: 338px;
-
-}
-
-.sectionIndex {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  padding-top: 28px;
-}
-
-p {
-    border-top: 0px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    height: 90px;
-    width: 56%;
-    font-size: 32px;
-    margin-bottom: 0px;
-    text-align: center;
-    margin-top: 39px;
-}
-
-.signUpIn {
-  width: 81%;
-  height: 437px;
-  margin-top: 368px;
-  margin-left: auto;
-  margin-right: auto;
-  background: rgba(245, 245, 238, 0.8);
-  padding-bottom: 5px;
-  border-radius: 2%;
-  font-size: 23px;
-  padding-top: 24px;
-}
-
-/* this affects the button for "login" in index.html*/
-.logIn {
-  background-color: azure;
-  border-radius: 8%;
-  margin-top: 61px;
-  width: 43%;
-  outline: none;
-  cursor: pointer;
-  display: inline-block;
-  margin-left: 5%;
-  margin-right: 0%;
-  padding: 16px;
-}
-
-/* this affects the button for "signup" in index.html*/
-.signUP {
-  background-color: azure;
-  border-radius: 8%;
-  margin-top: 61px;
-  width: 43%;
-  display: inline-block;
-  outline: none;
-  cursor: pointer;
-  margin-left: 0%;
-  margin-right: -14%;
-  padding: 16px;
-}
-.formOpener {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 28px;
-  color: white;
-  text-align: left;
-  margin: 4px;
-  padding-left: 13px;
-  padding-top: 13px;
-}
-
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 999px) {
 
   html {
-    zoom: 100%;
+    zoom: 80%;
   }
-    .openingBox { 
-    background: linear-gradient(132deg, #f39774, #1665c1);
-    animation: BackgroundGradient 30s ease infinite;
-    width: 100%;
-    height: 253px;
-    margin-left: 0;
-    padding-bottom: 100px;
-    font-size: 25px;
-    top: 50px;
-    color: white;
+
+  .flexBox3 {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 10%;
+    padding: 1%;
+    font-size: 16px;
+    margin: 0;
+    top: 12px;
+    right: 1%;
+    float: left;
     position: absolute;
-    border-bottom: solid white;
-    border-width: 5px;
-    height: 338px;
-  
-  }
+}
+
+/*Sign up page*/
+.flexBox4 {
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 29%;
+  padding: 1%;
+  font-size: 18px;
+  margin: 0;
+  top: 7px;
+  right: 1%;
+  float: left;
+  position: absolute;
+}
   
   .sectionIndex {
     position: relative;
@@ -721,59 +570,24 @@ h1 {
     padding-top: 28px;
   }
   
-  p {
-      border-top: 0px;
-      margin-top: 0;
+  
+    .signUpIn {
+      width: 92%;
+      height: 360px;
+      margin-top: 310px;
       margin-left: auto;
       margin-right: auto;
-      height: 90px;
-      width: 56%;
-      font-size: 32px;
-      margin-bottom: 0px;
-      text-align: center;
-      margin-top: 39px;
-  }
+      background: rgba(245, 245, 238, 0.8);
+      padding-bottom: 5px;
+      border-radius: 2%;
+      font-size: 23px;
+      padding-top: 24px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
   
-  .signUpIn {
-    width: 81%;
-    height: 437px;
-    margin-top: 368px;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(245, 245, 238, 0.8);
-    padding-bottom: 5px;
-    border-radius: 2%;
-    font-size: 23px;
-    padding-top: 24px;
-  }
-  
-  /* this affects the button for "login" in index.html*/
-  .logIn {
-    background-color: azure;
-    border-radius: 8%;
-    margin-top: 61px;
-    width: 43%;
-    outline: none;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: 2%;
-    margin-right: 0%;
-    padding: 16px;
-  }
-  
-  /* this affects the button for "signup" in index.html*/
-  .signUP {
-    background-color: azure;
-    border-radius: 8%;
-    margin-top: 61px;
-    width: 43%;
-    display: inline-block;
-    outline: none;
-    cursor: pointer;
-    margin-left: 0%;
-    margin-right: -14%;
-    padding: 16px;
-  }
   .formOpener {
     margin-left: auto;
     margin-right: auto;
@@ -788,43 +602,66 @@ h1 {
     padding-left: 13px;
     padding-top: 13px;
   }
+
+  .formCss {
+flex-direction: column;
+     margin-left: 3%;
+    margin-right: 3%;
+    }
+
+    .parentFlex {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+
+  .flexBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 48%;
+    padding: 1%;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .flexBox2 {
+      display: block;
+      width: 20%;
+      font-size: 16px;
+      margin-top: 18px;
+      margin-bottom: 3px;
+  }
+
+    .dbDisplay {
+  
+      border: solid lightgray;
+      background-color: rgba(255,255,255,0.5);
+      padding: 5px;
+      margin-bottom: 7px;
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+    }
+    
   
   }
 
 @media only screen and (min-width: 736px) {
 
-  .openingBox { 
-    background: linear-gradient(132deg, #f39774, #1665c1);
-    animation: BackgroundGradient 30s ease infinite;
-    width: 100%;
-    height: 253px;
-    margin-left: 0;
-    padding-bottom: 100px;
-    font-size: 25px;
-    top: 50px;
-    color: white;
-    position: absolute;
-    border-bottom: solid white;
-    border-width: 5px;
-    height: 371px;
-  
-  }
 
 .sectionIndex {
     position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 0; */
-    padding-top: 1px;
-    margin-top: 60px;
-}
 }
 
 /*For Mobile Screens*/
 @media only screen and (max-width: 699px) {
 
-  html {
+html {
     zoom: 77%;
   } 
 
@@ -852,32 +689,6 @@ margin-top: 17px;
 padding-top: 13px;
 }
 
-.openingBox {
-  width: 100%;
-  height: 200px;
-  margin-top: -6px;
-  padding-left: 0%;
-  padding-top: 46px;
-  color: white;
-  position: absolute;
-  border-bottom: solid white;
-  border-top: solid white;
-  font-size: 20px;
-  }
-  
-
-  p {
-    border-top: 0px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: 90px;
-    width: 400px;
-    font-size: 21px;
-    margin-bottom: 0px;
-    text-align: center;
-}
 
 .signUpIn {
   width: 94%;
@@ -892,15 +703,13 @@ padding-top: 13px;
 }
 
 .paraTag {
-  font-size: 20px;
-  margin-right: auto;
-  margin-top: -28px;
+  margin-top: -27px;
   margin-left: auto;
-  font-size: 17px;
-  padding-top: 29px;
-  padding-left: 0px;
-  padding-right: 72px;
-  margin-bottom: -73px;
+  margin-right: auto;
+  font-size: 20px;
+  padding-top: 31px;
+  margin-bottom: -19px;
+  text-align: center;
 }
 
 .sectionIndex {
@@ -911,36 +720,28 @@ padding-top: 13px;
   margin-top: 100px;
 }
 
-.formOpener {
+
+
+.parentFlex {
+  display: flex;
+  justify-content: center;
+  border: solid black;
+  flex-wrap: wrap;
+}
+
+.flexBox{
+  display: flex;
+  justify-content: center;
+  width: 48%;
+  padding: 1%;
+  font-size: 18px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.logIn {
-  margin-top: 44px;
-  width: 41%;
-  outline: none;
-  cursor: pointer;
-  margin-top: 71px;
-  margin-left: 3%;
-  margin-right: 4px;
-  padding: 20px;
-  background-color: azure;
-  border-radius: 8%;
-}
-
-.signUP {
-  position: relative;
-  left: -9px;
-  width: 41%;
-  outline: none;
-  cursor: pointer;
-  margin-top: 71px;
-  margin-left: 7px;
-  margin-right: 4px;
-  padding: 20px;
-  background-color: azure;
-  border-radius: 8%;
+.formOpener {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 }
@@ -961,26 +762,13 @@ padding-top: 13px;
     border-radius: 2%;
     padding-top: 13px;
   }
-  .openingBox {
-    width: 100%;
-    height: 200px;
-    margin-top: -6px;
-    padding-left: 0%;
-    padding-top: 46px;
-    color: white;
-    position: absolute;
-    border-bottom: solid white;
-    border-top: solid white;
-    font-size: 20px;
-  }
-   
+
 }
 
 
 @media only screen and (max-width: 612px) {
   
-  
-  
+
   .signUpIn {
     width: 94%;
     height: 350px;
@@ -998,11 +786,11 @@ padding-top: 13px;
 
   @media only screen and (max-width: 448px) {
   
-    
+ 
     
     .signUpIn {
       width: 94%;
-      height: 350px;
+      height: 371px;;
       margin-top: 60%;
       margin-left: auto;
       margin-right: auto;
@@ -1015,13 +803,10 @@ padding-top: 13px;
     
 
 @media only screen and (max-width: 320px) {
-  .signUP {
-    margin-left: -1px;
-}
 
 .signUpIn {
   width: 94%;
-  height: 350px;
+  height: 369px;
   margin-top: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -1031,3 +816,4 @@ padding-top: 13px;
   padding-top: 13px;
 }
 } 
+}

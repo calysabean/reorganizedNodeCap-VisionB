@@ -1,7 +1,7 @@
 // config/database.js
 
 exports.DATABASE_URL = process.env.DATABASE_URL || 'mongodb://testu:1234test@ds113648.mlab.com:13648/reorganized-db-for-nodecope';
-exports.TEST_DATABASE_URL = process.env.TEST_DATABASE_URL || 'mongodb://testu:1234test@ds113648.mlab.com:13648/reorganized-testdb-for-nodecope';
+exports.TEST_DATABASE_URL = process.env.TEST_DATABASE_URL || 'mongodb://testu:1234test@ds113648.mlab.com:13648/reorganized-testdb-for-nodecope&w=1';
 
 exports.PORT = process.env.PORT || 8080;
 

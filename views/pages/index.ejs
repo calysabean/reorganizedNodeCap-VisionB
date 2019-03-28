@@ -30,19 +30,22 @@
   <form role="form" method="post" class="formOpener js-login-form" action="/login">
   <legend>Login or SignUp</legend>
   <label class="username" for="username">Email:
-  <input id="username" value="test@test.com" name="email" title="Email" type="email" class="u-name"  placeholder="testu5@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+  <input id="username" name="email" title="Email" type="email" class="u-name"  placeholder="test@test.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
   </label>
 
-  <label for="password">Password:  <input id="password" title="Password" value="testing" name="password" type="password" class="p-word" placeholder="password05" required>
+  <label for="password">Password:  <input id="password" title="Password" name="password" type="password" class="p-word" placeholder="testing" required>
   </label>
       
-  <p class="paraTag">Demo Username: testu5@gmail.com</p>
-  <p class="paraTag">Demo Password: password05</p>
+  <div class="paraTag">Demo Username: test@test.com</div>
+  <div class="paraTag">Demo Password: testing</div>
 
 <!-- If a client clicks the login button then the .logIn class function in public/index.js will run verfying the user and loading the pick-goals.html page; if the user chooses login then the users credentials will be checked prior to the page pick-goals.html being loaded-->  
-  <button type="submit" class="logIn">Login</button>      
-  <button type="submit" class="signUP"><a href="/signup">Signup </a></button>
+<div class="parentFlex">
+  <button type="submit" id="logIn" class="flexBox">Login</button>  
+  <button onclick="location.href='/signup';" id="signUP" type="button" class="flexBox">SignUp</button>
+    </div>
   </form>
+
   </div>
   </section>
   

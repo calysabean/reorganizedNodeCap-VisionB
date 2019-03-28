@@ -36,6 +36,7 @@ module.exports = function(app, passport) {
             });
           }); 
         })
+        
 // make post request and redirect to profile page    
     app.get('/posts', jsonParser, function(req, res) {
         GoalPost.find()
