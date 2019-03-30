@@ -12,16 +12,16 @@ Username: test@test.com
 Password: testing
 
 ## View: Login Page
-![landing page](screenShots/loginPage.png)
+![landing page](screenshots/loginPage.png)
 
 ## View: SignUp Page
-![signup page](screenShots/signUpPage.png)
+![signup page](screenshots/signUpPage.png)
 
 ## View: Profile Page
-![profile page](screenShots/profilePage.png)
+![profile page](screenshots/profilePage.png)
 
 ## View: Edit Page
-![edit page](screenShots/editPage.png)
+![edit page](screenshots/editPage.png)
 
 ## Technologies:
 
