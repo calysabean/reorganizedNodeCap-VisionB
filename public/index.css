@@ -290,6 +290,7 @@ button:hover {
     right: 1%;
     float: left;
     position: absolute;
+    background-color: azure;
   }
 
   /* Signup page*/
