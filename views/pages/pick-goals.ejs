@@ -1,75 +1,111 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
   <head>
     <% include ../partials/head %>
   </head>
-    
-  <body>
 
+  <body>
     <nav class="pickGoalsNav nav-home" role="navigation">
-    <!--<header role="banner">-->
-    <h1>Visio</h1> 
-    <!--</header>  -->
-    <button onclick="location.href='/logout';" type="submit" class="flexBox3">LogOut</button>  
+      <!--<header role="banner">-->
+      <h1>Visio</h1>
+      <!--</header>  -->
+      <button onclick="location.href='/logout';" type="submit" class="flexBox3">
+        LogOut
+      </button>
     </nav>
 
     <div class="openingBox">
-    <p class="pickGoalsPara">We all have goals and aspirations in life, but how can we reach them? The purpose of this app is to help individuals organize their ideas. Begin by typing your first goal below! Welcome to Visio!</p>
+      <p class="openingP">
+        We all have goals and aspirations in life, but how can we reach them?
+        The purpose of this app is to help individuals organize their ideas.
+        Begin by typing your first goal below! Welcome to Visio!
+      </p>
     </div>
-  
+
     <main>
-    <section class="main-section">
-    <div class="commentsForm"> 
+      <section class="main-section">
+        <div class="commentsForm">
+          <form class="goal-notes" role="form" action="/posts" method="post">
+            <legend>Notes to reach my goals, choose a category.</legend>
 
-    <form class="goal-notes" role="form" action="/posts" method="post">
-    <legend>Notes to reach my goals, choose a category.</legend>
-          
-    <label class="category" name="category" for="category"></label>
-    <select id="category" type="text" title="category" class="my-category" name="category" placeholder="Enter Category" required>
-    
-    <option class="cssClassOption" selected></option>
-    <option class="cssClassOption" value="Career">Career</option>
-    <option class="cssClassOption" value="Financial">Financial</option>
-    <option class="cssClassOption" value="Physical">Physical</option>
-    <option class="cssClassOption" value="Personal-Development">Personal-Development</option>
-    <option class="cssClassOption" value="Spiritual">Spiritual</option>
-    <option class="cssClassOption" value="Experiential">Experiential</option>
-    
-    </select>
-       
-    <label for="notes">
-    <input id="notes" title="notes" name="comments" type="text" class="my-notes" placeholder="Enter Notes" required>
-    </label>
-          
-    <button type="submit" class="submitPost">Submit</button>  
-      
-    </form>
-    </div>
-     
-    
-    <form class="formCss js-submit" method="#" >
+            <label class="category" name="category" for="category"></label>
+            <select
+              id="category"
+              type="text"
+              title="category"
+              class="my-category"
+              name="category"
+              placeholder="Enter Category"
+              required
+            >
+              <option class="cssClassOption" selected></option>
+              <option class="cssClassOption" value="Career">Career</option>
+              <option class="cssClassOption" value="Financial"
+                >Financial</option
+              >
+              <option class="cssClassOption" value="Physical">Physical</option>
+              <option class="cssClassOption" value="Personal-Development"
+                >Personal-Development</option
+              >
+              <option class="cssClassOption" value="Spiritual"
+                >Spiritual</option
+              >
+              <option class="cssClassOption" value="Experiential"
+                >Experiential</option
+              >
+            </select>
 
-    <% goalposts.forEach(function(goalpost) { %> 
-      <div class="dbDisplay">
+            <label for="notes">
+              <input
+                id="notes"
+                title="notes"
+                name="comments"
+                type="text"
+                class="my-notes"
+                placeholder="Enter Notes"
+                required
+              />
+            </label>
 
-    <label for="goalposts"></label>
-    <input title="checkBox" id="goalposts" class="answerOption1" name="answer" >
-    <p class="dbGoals1 "><%=goalpost.category%></p>
-    <p class="dbGoals1"><%=goalpost.comments%></p>
-    
-    <div class="parentFlex">
-    <button onclick="location.href='/delete/<%=goalpost._id%>';" type="button" class="flexBox2">Delete</button>  
-    <button onclick="location.href='/edit-goal/<%=goalpost._id%>';" class="flexBox2" type="button" id="/edit">Update</button>  
-  </div>
-  </div>
-                
-    <% }) %> 
-                
-    </form>
-    
-  </section>
+            <button type="submit" class="submitPost">Submit</button>
+          </form>
+        </div>
 
-  </main>
+        <form class="formCss js-submit" method="#">
+          <% goalposts.forEach(function(goalpost) { %>
+          <div class="dbDisplay">
+            <label for="goalposts"></label>
+            <input
+              title="checkBox"
+              id="goalposts"
+              class="answerOption1"
+              name="answer"
+            />
+            <p class="dbGoals1 "><%=goalpost.category%></p>
+            <p class="dbGoals1"><%=goalpost.comments%></p>
 
+            <div class="parentFlex">
+              <button
+                onclick="location.href='/delete/<%=goalpost._id%>';"
+                type="button"
+                class="flexBox2"
+              >
+                Delete
+              </button>
+              <button
+                onclick="location.href='/edit-goal/<%=goalpost._id%>';"
+                class="flexBox2"
+                type="button"
+                id="/edit"
+              >
+                Update
+              </button>
+            </div>
+          </div>
+
+          <% }) %>
+        </form>
+      </section>
+    </main>
   </body>
-  </html>
+</html>
