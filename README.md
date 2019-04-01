@@ -32,4 +32,4 @@ Password: testing
 -	Node.js
 -	Express
 -	Passport
--	Mocha/Chai and MongoDB.
+-	MongoDB.
