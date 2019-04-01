@@ -154,6 +154,7 @@ legend {
   display: block;
   width: 162px;
   margin-bottom: 17px;
+  background-color: azure;
 }
 
 /*Formats GET goals item on pick-goals.ejs*/
