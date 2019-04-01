@@ -12,7 +12,7 @@ Username: test@test.com
 Password: testing
 
 ## View: Login Page
-![landing page](screenshots/loginPage.png)
+![landing page](screenshots/logInPage.png)
 
 ## View: SignUp Page
 ![signup page](screenshots/signUpPage.png)
