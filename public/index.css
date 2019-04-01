@@ -305,6 +305,7 @@ button:hover {
     right: 1%;
     float: left;
     position: absolute;
+    background-color: azure;
   }
 
   .openingP {
@@ -444,6 +445,7 @@ button:hover {
     right: 1%;
     float: left;
     position: absolute;
+    background-color: azure;
   }
 
   .sectionIndex {
